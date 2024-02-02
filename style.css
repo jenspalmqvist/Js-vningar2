@@ -1,0 +1,45 @@
+.defaultNav {
+  display: none;
+}
+
+.showNav {
+  display: flex;
+}
+
+nav a {
+  color: yellow;
+}
+
+nav p {
+  color: blue;
+}
+
+nav div {
+  color: chartreuse;
+}
+
+a[b="No"] {
+  color: pink;
+}
+
+input[type="submit"] {
+  color: brown;
+}
+
+@keyframes changeColor {
+  from {
+    background-color: red;
+  }
+  50% {
+    background-color: green;
+  }
+  to {
+    background-color: red;
+  }
+}
+
+#greetingParagraph {
+  animation-name: changeColor;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}

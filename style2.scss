@@ -1,0 +1,50 @@
+$primaryColor: green;
+$secondaryColor: rgba(255, 60, 0, 0.609);
+
+.defaultNav {
+  display: none;
+}
+
+.showNav {
+  display: flex;
+}
+
+nav {
+  a {
+    color: lightcoral;
+  }
+
+  p {
+    color: yellow;
+  }
+
+  div {
+    color: chartreuse;
+  }
+}
+
+a[b="No"] {
+  color: $secondaryColor;
+}
+
+input[type="submit"] {
+  color: $primaryColor;
+}
+
+@keyframes changeColor {
+  from {
+    background-color: $secondaryColor;
+  }
+  50% {
+    background-color: $primaryColor;
+  }
+  to {
+    background-color: $secondaryColor;
+  }
+}
+
+#greetingParagraph {
+  animation-name: changeColor;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}

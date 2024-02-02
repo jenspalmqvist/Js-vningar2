@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Antingen lägger ni script-taggen här med nyckelordet "defer" i för att hindra att det laddas innan bodyn är klar -->
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <nav id="navLinks" class="defaultNav">
+      <ul>
+        <li><a href="#" b="Yes">Länk 1</a></li>
+        <li><a href="#">Länk 2</a></li>
+        <li><a href="#">Länk 3</a></li>
+      </ul>
+      <p>Hej</p>
+      <div>Hoj</div>
+    </nav>
+    <button id="alertButton">Alert!</button>
+    <button id="redButton">Red!</button>
+    <button id="yellowButton" onclick="yellowFunction()">Yellow!</button>
+    <button id="menuButton">Visa meny!</button>
+
+    <section id="visitorSection">
+      <ul id="visitorList"></ul>
+    </section>
+    <form id="nameForm">
+      <label for="firstName">Förnamn</label>
+      <input type="text" id="nameInput" name="firstName" />
+      <input type="submit" value="Skicka" />
+    </form>
+    <p id="greetingParagraph"></p>
+  </body>
+  <!-- Eller här för att se till att bodyn är inläst innan vi komme till script-taggen -->
+  <!-- <script src="script.js"></script> -->
+</html>

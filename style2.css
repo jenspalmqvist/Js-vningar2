@@ -1,0 +1,43 @@
+.defaultNav {
+  display: none;
+}
+
+.showNav {
+  display: flex;
+}
+
+nav a {
+  color: lightcoral;
+}
+nav p {
+  color: yellow;
+}
+nav div {
+  color: chartreuse;
+}
+
+a[b="No"] {
+  color: rgba(255, 60, 0, 0.609);
+}
+
+input[type="submit"] {
+  color: green;
+}
+
+@keyframes changeColor {
+  from {
+    background-color: rgba(255, 60, 0, 0.609);
+  }
+  50% {
+    background-color: green;
+  }
+  to {
+    background-color: rgba(255, 60, 0, 0.609);
+  }
+}
+
+#greetingParagraph {
+  animation-name: changeColor;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+} /*# sourceMappingURL=style2.css.map */
